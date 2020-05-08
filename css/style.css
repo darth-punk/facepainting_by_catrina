@@ -1,0 +1,488 @@
+     html {
+         scroll-behavior: smooth;
+         scroll-padding-top: 80px;
+     }
+     
+     body {
+         box-sizing: border-box;
+         margin: 0;
+         padding: 0;
+         font-family: Arial, Helvetica, sans-serif;
+     }
+     
+     .site_container {
+         max-width: 100vw;
+     }
+     /* header {
+         width: 100vw;
+         z-index: 100;
+         background-color: aqua;
+         position: fixed;
+         display: block;
+     } */
+     
+     .header-container {
+         max-width: 100vw;
+         display: flex;
+         justify-content: center;
+     }
+     
+     .header {
+         position: fixed;
+         background-color: #8362a7;;
+         width: 100%;
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         z-index: 500;
+     }
+     
+     .site_logo {
+         display: flex;
+         height: 60px;
+         padding: 10px 80px;
+     }
+     
+     .navbar {
+         display: flex;
+         flex-direction: row;
+         justify-content: space-around;
+         align-items: stretch;
+         list-style-type: none;
+         padding: 10px 80px;
+     }
+     
+     .navbar_item {
+         display: flex;
+         align-items: center;
+         padding: 0 50px;
+     }
+     
+     .navbar_item:last-child {
+         padding-right: 0;
+     }
+     
+     a {
+         text-decoration: none;
+         color: #ffffff;
+     }
+    
+     
+     .navbar-toggle {
+         display: none;
+     }
+     
+     .main_banner {
+         position: relative;
+         padding: 150px 50px;
+         background-color: #8362a7;
+     }
+     
+     .main_banner_container {
+         display: flex;
+         flex-direction: row;
+         width: 100%;
+         margin: 50px 0;
+     }
+     
+     .main_banner_left {
+         width: 50%;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+     }
+     
+     .main_banner_right {
+         width: 50%;
+         display: flex;
+         flex-direction: row;
+         justify-content: center;
+         align-items: center;
+     }
+     
+     .main_banner_text,
+     h2 {
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         color: #ffffff;
+         font-weight: 100;
+         padding: 0 10px;
+     }
+     
+     .logo_text {
+         width: 100%;
+         padding-left: 0;
+     }
+     
+     .main_banner_image_1{
+        transform: rotate(-8deg);
+        position: relative;
+        -webkit-box-shadow: 0px 0px 25px -8px rgba(48, 48, 48, 1);
+        -moz-box-shadow: 0px 0px 25px -8px rgba(48, 48, 48, 1);
+        box-shadow: 0px 0px 25px -8px rgba(48, 48, 48, 1);
+     }
+     .main_banner_image_2 {
+         max-width: 40%;
+       
+         transform: rotate(-8deg);
+         position: relative;
+         -webkit-box-shadow: 0px 0px 25px -8px rgba(48, 48, 48, 1);
+         -moz-box-shadow: 0px 0px 25px -8px rgba(48, 48, 48, 1);
+         box-shadow: 0px 0px 25px -8px rgba(48, 48, 48, 1);
+     }
+     
+     .main_banner_image_2 {
+         transform: rotate(8deg);
+     }
+     
+     .about_me {
+         background-color: #ffffff;
+         display: flex;
+         justify-content: space-evenly;
+         align-content: center;
+         padding: 50px 0;
+     }
+     
+     .about_me_left,
+     .about_me_right {
+         display: flex;
+         justify-content: center;
+         align-items: center;
+     }
+     
+     .about_me_left {
+         width: 50%;
+     }
+     
+     .about_me_right {
+         width: 50%;
+     }
+     
+     .about_me_image,
+     .about_me_info {
+         display: flex;
+         justify-content: center;
+     }
+     
+     .about_me_image {transform: rotate(-4deg);
+        -webkit-transform: rotate(-4deg);
+        -webkit-box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.75);
+box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.75);
+     }
+     
+     .about_me_info {
+         padding: 0 50px;
+         color: #9c9c9c;
+         font-size: 1.5rem;
+     }
+     
+     .about_me_reviews {
+         color: #444;
+         font-family: 'Roboto', sans-serif;
+         font-size: 1rem;
+         line-height: 1.5;
+         width: 100%;
+         height: 250px;
+         padding: 2rem 0;
+     }
+     /* Slideshow container */
+     
+     .slideshow-container {
+         position: relative;
+         background: #f1f1f1;
+         width: 100%;
+         padding: 50px 0;
+     }
+     /* Slides */
+     
+     .slides_container {
+         width: 70%;
+         margin: 0 auto;
+     }
+     
+     .mySlides {
+         display: none;
+         text-align: center;
+         height: 200px;
+     }
+     /* Next & previous buttons */
+     
+     .prev,
+     .next {
+         cursor: pointer;
+         position: absolute;
+         top: 50%;
+         width: auto;
+         margin-top: -30px;
+         padding: 16px;
+         color: #888;
+         font-weight: bold;
+         font-size: 20px;
+         border-radius: 0 3px 3px 0;
+         user-select: none;
+     }
+     /* Position the "next button" to the right */
+     
+     .next {
+         position: absolute;
+         right: 0;
+         border-radius: 3px 0 0 3px;
+     }
+     /* On hover, add a black background color with a little bit see-through */
+     
+     .prev:hover,
+     .next:hover {
+         background-color: rgba(0, 0, 0, 0.8);
+         color: white;
+     }
+     /* The dot/bullet/indicator container */
+     
+     .dot-container {
+         text-align: center;
+         padding: 20px;
+         background: #ddd;
+     }
+     /* The dots/bullets/indicators */
+     
+     .dot {
+         cursor: pointer;
+         height: 15px;
+         width: 15px;
+         margin: 0 2px;
+         background-color: #bbb;
+         border-radius: 50%;
+         display: inline-block;
+         transition: background-color 0.6s ease;
+     }
+     /* Add a background color to the active dot/circle */
+     
+     .active,
+     .dot:hover {
+         background-color: #717171;
+     }
+     /* Add an italic font style to all quotes */
+     /* Add a blue color to the author */
+     
+     .author::before {
+         content: ' ';
+         display: block;
+         background-color: #8362a7;
+         width: 60%;
+         margin: 0 auto;
+         height: 4px;
+         margin-bottom: 20px;
+     }
+     
+     .author {
+         color: cornflowerblue;
+         font-style: italic;
+     }
+     
+     #slideshow {
+         margin: 50px auto;
+         position: relative;
+         width: 240px;
+         height: 240px;
+         padding: 10px;
+         box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+     }
+     
+     #slideshow>div {
+         position: absolute;
+         top: 10px;
+         left: 10px;
+         right: 10px;
+         bottom: 10px;
+     }
+     
+     .parallax_1 {
+         /* The image used */
+         background-image: url("../images/site_images/parallax_1.png");
+         /* Set a specific height */
+         height: 250px;
+         /* Create the parallax scrolling effect */
+         background-attachment: fixed;
+         background-position: center;
+         background-repeat: no-repeat;
+         background-size: cover;
+     }
+     
+     .facepainting,
+     .bpainting,
+     .glitterparties {
+         background-color: #8362a7;
+         display: flex;
+         flex-direction: row;
+         justify-content: space-around;
+         flex-basis: auto;
+         padding: 20px;
+     }
+     
+     .bpainting {
+         background-color: #22667b;
+     }
+     
+     .facepainting_left,
+     .facepainting_right,
+     .bpainting_left,
+     .bpainting_right,
+     .glitterparties_left,
+     .glitterparties_right {
+         padding: 30px;
+         flex: 1 1 0;
+     }
+     
+     .work_info {
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+     }
+     
+     .work_header,
+     .work_info_text {
+         color: azure;
+     }
+     
+     .facepainting_right,
+     .bpainting_left,
+     .glitter_parties_right {
+         max-width: 100%;
+         height: 100%;
+     }
+     
+     .box {
+         margin-top: 20px;
+         display: flex;
+         flex-wrap: wrap;
+         align-items: center;
+         justify-content: space-between;
+     }
+     
+     .work_image {
+         width: 30%;
+         transition: all .3s ease-in-out;
+         margin: 5px;
+         -moz-box-shadow: 0px 6px 8px 0px rgba(50, 50, 50, 0.65);
+         box-shadow: 0px 6px 8px 0px rgba(50, 50, 50, 0.65);
+     }
+     
+     .fc_img_1 {
+         transform: rotate(-5deg);
+         -webkit-transform: rotate(-5deg);-webkit-box-shadow: 0px 6px 8px 0px rgba(50, 50, 50, 0.65);
+        
+     }
+     
+     .fc_img_2 {
+         transform: rotate(3deg);
+         -webkit-transform: rotate(3deg);
+     }
+     
+     .fc_img_3 {
+         transform: rotate(-2deg);
+         -webkit-transform: rotate(-2deg);
+     }
+     
+     .fc_img_4 {
+         transform: rotate(4deg);
+         -webkit-transform: rotate(4deg);
+     }
+     
+     .fc_img_5 {
+         transform: rotate(-6deg);
+         -webkit-transform: rotate(-6deg);
+     }
+     
+     .fc_img_6 {
+         transform: rotate(3deg);
+         -webkit-transform: rotate(3deg);
+     }
+     
+     .work_image:hover {
+         -webkit-box-shadow: 0px 6px 8px 0px rgba(50, 50, 50, 0.65);
+         -moz-box-shadow: 0px 6px 8px 0px rgba(50, 50, 50, 0.65);
+         box-shadow: 0px 6px 8px 0px rgba(50, 50, 50, 0.65);
+         -webkit-transform: scale(1.1, 1.1);
+         transform: scale(1.1, 1.1);
+         -webkit-transition: all .3s ease-in-out;
+         transition: all .3s ease-in-out;
+         /* -webkit-transition: ease-in .25s; */
+         z-index: 20;
+     }
+     
+     .parallax_2 {
+         background-image: url("../images/site_images/parallax_2.png");
+         /* The image used */
+         /* Set a specific height */
+         height: 250px;
+         /* Create the parallax scrolling effect */
+         background-attachment: fixed;
+         background-position: center;
+         background-repeat: no-repeat;
+         background-size: cover;
+     }
+     
+     .contact_container {
+         display: flex;
+         justify-content: space-between;
+         flex-direction: row;
+         flex-basis: 100%;
+     }
+     
+     .info_container,
+     .form_container {
+         display: flex;
+         flex-direction: column;
+         flex: 1 1 0;
+         padding: 10px 50px;
+         background-color: #22667b;
+         color: #ffffff;
+     }
+     
+     .info_container {}
+     
+     label,
+     input,
+     textarea {
+         margin-top: 10px;
+         text-transform: uppercase;
+     }
+     
+     input,
+     textarea {
+         font-family: Arial, Helvetica, sans-serif;
+         font-size: 14px;
+         border: none;
+         padding: 10px;
+         border-radius: 5px;
+     }
+     
+     #submit {
+         margin-bottom: 20px;
+         width: 100px;
+         background-color: #ffffff;
+         border: none;
+         color: #3a3a3a;
+         padding: 10px;
+     }
+     
+     .footer_container {
+         background-color: #444;
+         display: flex;
+         justify-content: space-between;
+         flex-direction: row;
+         flex-basis: 100%;
+         padding: 80px 0;
+     }
+     
+     .footer_left,
+     .footer_right {
+         display: flex;
+         flex-direction: column;
+         background-color: aliceblue;
+         flex: 1 1 0;
+         margin: 10px;
+         padding: 10px 50px;
+     }

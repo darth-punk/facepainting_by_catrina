@@ -1,0 +1,112 @@
+                                             @media only screen and (max-width: 1080px) {
+                                                 html {
+                                                     scroll-padding-top: 130px;
+                                                 }
+                                                 header {
+                                                     flex-direction: column;
+                                                     height: 130px;
+                                                     margin: 0;
+                                                     padding: 0;
+                                                     padding: 10px 0;
+                                                     text-align: center;
+                                                 }
+                                                 .site_logo {
+                                                     display: flex;
+                                                     align-self: center;
+                                                     padding: 0 20px;
+                                                 }
+                                                 .navbar {
+                                                     list-style-type: none;
+                                                     width: 100%;
+                                                     padding: 0;
+                                                     flex-direction: row;
+                                                     margin-top: 10px;
+                                                     margin-bottom: 0;
+                                                 }
+                                                 .navbar_item {
+                                                     display: block;
+                                                     padding: 10px;
+                                                 }
+                                                 .navbar-toggle {
+                                                     display: block;
+                                                     position: absolute;
+                                                     top: 25px;
+                                                     right: 20px;
+                                                     cursor: pointer;
+                                                     color: #ffffff;
+                                                     font-size: 24px;
+                                                 }
+                                                 a:hover {
+                                                     background-color: #9C6EAC;
+                                                     color: #eeeeee;
+                                                     border-bottom: 1px #eeeeee solid;
+                                                 }
+                                                 .active {
+                                                     display: block;
+                                                 }
+                                                 .main_banner_container {
+                                                     flex-direction: column;
+                                                 }
+                                                 .main_banner_left,
+                                                 .main_banner_right {
+                                                     width: 100%
+                                                 }
+                                                 .main_banner_text {
+                                                     width: 100%;
+                                                 }
+                                                 .logo_text {
+                                                     width: 100%;
+                                                 }
+                                                 .main_logo_text_sub {
+                                                     text-align: center;
+                                                     padding-bottom: 2rem;
+                                                 }
+                                                 .main_banner_image_1,
+                                                 .main_banner_image_2 {
+                                                     height: 25%;
+                                                 }
+                                                 .about_me {
+                                                     flex-direction: column;
+                                                     align-items: center;
+                                                 }
+                                                 .about_me_image {
+                                                     margin-top: 50px;
+                                                     transform: rotate(0deg);
+                                                     height: auto;
+                                                     width: 85%;
+                                                 }
+                                                 .about_me_info {
+                                                     padding: 0 10px;
+                                                     text-align: center;
+                                                     font-size: 1.5rem;
+                                                 }
+                                             }
+                                             
+                                             @media only screen and (max-width: 1080px) {
+                                                 .parallax_1,
+                                                 .parallax_2 {
+                                                     height: 100px;
+                                                 }
+                                                 .my_work {
+                                                    display: flex;
+                                                    flex-direction: column;
+                                                    justify-content: center;
+                                                    align-items: center;
+                                                }
+                                                .bpainting{
+                                                    flex-direction: column-reverse;
+                                                }
+                                                 .contact_container {
+                                                     flex-direction: column;
+                                                 }
+                                                 #submit {
+                                                     width: 100%;
+                                                     padding: 10px;
+                                                 }
+                                                 .footer_container {
+                                                     flex-direction: column;
+                                                 }
+                                             }
+                                             
+                                             @media only screen and (max-width: 1670px) {
+                                             }
